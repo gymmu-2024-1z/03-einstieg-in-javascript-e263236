@@ -68,10 +68,13 @@ export function aufgabe03(args) {
   const result = []
 
   let count = 0
-
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    count = count + 1
+    if (currentElement === "e") {
+      count = count + 1
+    } else if (currentElement === "E") {
+      count = count + 1
+    }
   }
   return count
 }
