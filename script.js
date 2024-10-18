@@ -79,3 +79,8 @@ export function aufgabe03(args) {
   return count
 }
 linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
+
+export function aufgabe04(args) {
+  //ich weiss au nd
+}
+linkupExerciseHandler("[data-click=aufgabe04]")
