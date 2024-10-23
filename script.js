@@ -81,6 +81,36 @@ export function aufgabe03(args) {
 linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
 
 export function aufgabe04(args) {
-  //ich weiss au nd
+  const input = args
+  const result = []
+
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === " ") {
+      count = count + 1
+    }
+  }
+  return count
 }
-linkupExerciseHandler("[data-click=aufgabe04]")
+linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
+
+export function aufgabe05(args) {
+  const input = args
+  const result = []
+  const noSpecialCharacters = //momma i need help i dont understand
+    ä
+  let hasUpperCaseLetter = false
+  //Läuft zeichen für Zeichen über den ganzen Text
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const upperCase = currentElement.toUpperCase()
+    if (currentElement === "." || currentElement === " ") {
+    } else if (currentElement === upperCase) {
+      hasUpperCaseLetter = true
+    }
+  }
+
+  return hasUpperCaseLetter
+}
+linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
