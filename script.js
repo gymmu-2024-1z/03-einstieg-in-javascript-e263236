@@ -98,14 +98,20 @@ linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
 export function aufgabe05(args) {
   const input = args
   const result = []
-  const noSpecialCharacters = //momma i need help i dont understand
-    ä
+
   let hasUpperCaseLetter = false
   //Läuft zeichen für Zeichen über den ganzen Text
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     const upperCase = currentElement.toUpperCase()
-    if (currentElement === "." || currentElement === " ") {
+    if (
+      currentElement === "." ||
+      currentElement === " " ||
+      currentElement === "-" ||
+      currentElement === "," ||
+      currentElement === ";" ||
+      currentElement === "_"
+    ) {
     } else if (currentElement === upperCase) {
       hasUpperCaseLetter = true
     }
@@ -114,3 +120,40 @@ export function aufgabe05(args) {
   return hasUpperCaseLetter
 }
 linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
+
+export function aufgabe08(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === "e") {
+      result.push(3)
+    } else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
+
+export function aufgabe06(args) {
+  const input = args
+  const result = []
+
+  let SpecialLetter = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const UpperCaseLetter = currentElement.toUpperCase()
+
+    const LowerCaseLetter = UpperCaseLetter.toLowerCase()
+    if (currentElement === " ") result.push(currentElement)
+    else if (LowerCaseLetter === UpperCaseLetter) {
+      SpecialLetter = true
+    }
+  }
+  return SpecialLetter
+}
+linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
