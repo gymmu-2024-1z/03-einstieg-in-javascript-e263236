@@ -83,8 +83,9 @@ linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
 export function aufgabe04(args) {
   const input = args
   const result = []
-
+  // count all words
   let count = 0
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if (currentElement === " ") {
@@ -157,3 +158,40 @@ export function aufgabe06(args) {
   return SpecialLetter
 }
 linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
+
+export function aufgabe09(args) {
+  const input = args
+  // Wenn input genau 6 zeichen lang ist, gebe wahr zurück
+  if (input.length === 6) {
+    return true
+  } else {
+    return false
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
+
+export function aufgabe07(args) {
+  //teste ob das wort und vorkommt
+  const input = args
+  if (input.includes("und")) {
+    return true
+  } else {
+    return false
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
+
+export function aufgabe12(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    // Suche die Position des ersten es in einem Text
+    if (input[i] === "e" || input[i] === "E") {
+      return i
+    } else {
+      return -1
+    }
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
