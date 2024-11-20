@@ -92,7 +92,7 @@ export function aufgabe04(args) {
       count = count + 1
     }
   }
-  return count
+  return count + 1
 }
 linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
 
@@ -104,16 +104,12 @@ export function aufgabe05(args) {
   //Läuft zeichen für Zeichen über den ganzen Text
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    const upperCase = currentElement.toUpperCase()
-    if (
-      currentElement === "." ||
-      currentElement === " " ||
-      currentElement === "-" ||
-      currentElement === "," ||
-      currentElement === ";" ||
-      currentElement === "_"
-    ) {
-    } else if (currentElement === upperCase) {
+    const UpperCaseLetter = currentElement.toUpperCase()
+
+    const LowerCaseLetter = UpperCaseLetter.toLowerCase()
+    if (LowerCaseLetter === UpperCaseLetter) {
+      //do nothing
+    } else if (currentElement === UpperCaseLetter) {
       hasUpperCaseLetter = true
     }
   }
@@ -185,13 +181,55 @@ export function aufgabe12(args) {
   const input = args
   const result = []
 
+  let pos = -1
+  let foundE = false
+
   for (let i = 0; i < input.length; i++) {
-    // Suche die Position des ersten es in einem Text
-    if (input[i] === "e" || input[i] === "E") {
-      return i
-    } else {
-      return -1
-    }
+    const currentELement = input[i]
+    if (currentELement === "e") {
+      if (foundE === false) {
+        pos = i
+      }
+      foundE = true
+    } // nicht  mehr als ein e wird bestimmt
   }
+  return pos
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
+
+export function aufgabe13(args) {
+  const input = args
+  const result = []
+
+  let pos = -1
+  let foundE = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentELement = input[i]
+    if (currentELement === "e") {
+      pos = i //wenn e gefunden wird i überschrieben
+
+      foundE = true
+    }
+  }
+  return pos
+}
+linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
+
+export function aufgabe20(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === ".") {
+      if (input[i + 1] === " ") {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
