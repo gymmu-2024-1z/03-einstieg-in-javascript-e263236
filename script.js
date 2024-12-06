@@ -233,3 +233,24 @@ export function aufgabe20(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
+
+export function aufgabePeter(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //wenn das Element 1 ist, ersetze es mit Peter
+    if (currentElement === "1") {
+      result.push("P")
+      result.push("e")
+      result.push("t")
+      result.push("e")
+      result.push("r")
+    } else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabePeter]", aufgabePeter)
