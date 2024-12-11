@@ -254,3 +254,36 @@ export function aufgabePeter(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabePeter]", aufgabePeter)
+
+//Aufgabe Maria
+
+//Maria hat Angst vor Grossbuchstaben, deswegen will sie jeden Grossbuchstaben mit `!kleinbuchstaben`ersetzen. Ausserdem möchte sie ein `Triggerwarning` am Anfang des Satzes haben.
+
+export function aufgabeMaria(args) {
+  const input = args
+  const result = []
+
+  let hasDangerousLetters = false
+
+  for (let i = 0; i < input.length; i++) {
+    //wenn das currentElement Grossbuchstabe ist ersetze mit "!kleinbuchstabe"
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+    //65-90
+    if (ascii >= 65 && ascii <= 90) {
+      // ist ein Grossbuchstabe
+      result.push("!")
+      result.push(currentElement.toLowerCase())
+
+      hasDangerousLetters = true
+    } else {
+      result.push(currentElement)
+    }
+  }
+
+  if (hasDangerousLetters === true) {
+    result.unshift("TW: ")
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabeMaria]", aufgabeMaria)

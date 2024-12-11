@@ -155,4 +155,16 @@ Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
 
 ## Aufgabe Peter
 
-Ersetzen Sie alle `1` mit dem Namen `Peter`
+Peter liebt die Zahl 1 und möchte deshalb dass Sie alle `1` mit dem Namen
+`Peter` ersetzen.
+
+## Aufgabe Maria
+
+Maria hat Angst vor Grossbuchstaben, deswegen will sie jeden Grossbuchstaben mit
+`!kleinbuchstaben`ersetzen. Ausserdem möchte sie ein `Triggerwarning` am Anfang
+des Satzes haben, wenn dieser vorher Grossbuchstaben enthielt.
+
+## Aufgabe Leonie
+
+Leonie hat ihre Brille verloren und sieht nun alles doppelt, stelle den Satz so
+um, wie sie es sieht.
