@@ -408,3 +408,28 @@ export function aufgabe28(args) {
   const result = []
 }
 linkupExerciseHandler("[data-click=aufgabe28]", aufgabe28)
+
+export function insertSort(args) {
+  const input = args
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+
+    const result = []
+
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+      const ascii = currentElement.charCodeAt(0)
+      //vergleiche ob das zweite Element einen kleineren oder grösseren ascii code hat als das vorherige Element und sortiere entsprechend
+      if (i > 0 && ascii < input[i - 1].charCodeAt(0)) {
+        result.push(input[i - 1])
+        result.push(currentElement)
+      } else {
+        result.push(currentElement)
+      }
+    }
+    return result.join("")
+  }
+}
+linkupExerciseHandler("[data-click=insertSort]", insertSort)
