@@ -325,7 +325,6 @@ export function aufgabe11(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
 
-/*************  ✨ Codeium Command 🌟  *************/
 export function aufgabe14(args) {
   const input = args
   const result = []
