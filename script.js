@@ -287,3 +287,28 @@ export function aufgabeMaria(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabeMaria]", aufgabeMaria)
+
+export function countingSort(args) {
+  const input = args
+  const lookup = new Array(128).fill(0) //hier machen wir eine neue Liste in der dann gezählt wird wie oft ein Element vorkommt 128 weil im ascii code 128 Elemente vorkommen
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0) //bestimme den ascii Code des Elements
+    lookup[ascii] = lookup[ascii] + 1 //rechne +1 für das Element
+  }
+
+  const result = []
+
+  for (let i = 0; i < lookup.length; i++) {
+    const value = lookup[i]
+    for (let j = 0; j < value; j++) {
+      const character = String.fromCharCode(i)
+      result.push(character)
+    }
+  }
+
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=countingSort]", countingSort)
