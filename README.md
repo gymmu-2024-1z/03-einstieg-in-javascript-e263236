@@ -167,4 +167,4 @@ des Satzes haben, wenn dieser vorher Grossbuchstaben enthielt.
 ## Aufgabe Leonie
 
 Leonie hat ihre Brille verloren und sieht nun alles doppelt, stelle den Satz so
-um, wie sie es sieht.
+um, wie sie es sieht.Das heisst sie sieht jeden Buchstaben doppelt

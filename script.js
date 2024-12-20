@@ -312,3 +312,99 @@ export function countingSort(args) {
 }
 
 linkupExerciseHandler("[data-click=countingSort]", countingSort)
+
+export function aufgabe10(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe10]", aufgabe10)
+
+export function aufgabe11(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
+
+export function aufgabe14(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
+
+export function aufgabe15(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
+
+export function aufgabe16(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe16]", aufgabe16)
+
+export function aufgabe17(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe17]", aufgabe17)
+
+export function aufgabe18(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe18]", aufgabe18)
+
+export function aufgabe19(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
+
+export function aufgabe21(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe21]", aufgabe21)
+
+export function aufgabe22(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
+
+export function aufgabe23(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe23]", aufgabe23)
+
+export function aufgabe24(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe24]", aufgabe24)
+
+export function aufgabe25(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe25]", aufgabe25)
+
+export function aufgabe26(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe26]", aufgabe26)
+
+export function aufgabe27(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe27]", aufgabe27)
+
+export function aufgabe28(args) {
+  const input = args
+  const result = []
+}
+linkupExerciseHandler("[data-click=aufgabe28]", aufgabe28)
