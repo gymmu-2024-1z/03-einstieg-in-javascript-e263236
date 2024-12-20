@@ -328,25 +328,6 @@ linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
 export function aufgabe14(args) {
   const input = args
   const result = []
-
-  //drittes e / E erkennen und markieren
-  // in einzelne Buchstaben aufteilen
-  function mark_third_e(args) {
-    let eCount = 0
-    const newText = letters
-      .map((letter) => {
-        if (letter === "e" || letter === "E") {
-          eCount = eCount + 1
-        }
-        if (eCount === 3) {
-          return <span style="color : red; ">e</span>
-        }
-        return letter
-      })
-      .join("")
-
-    return newText
-  }
 }
 
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
