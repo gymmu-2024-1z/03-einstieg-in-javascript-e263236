@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/SYYUWTQg)
+
 # Einstieg ins Programmieren mit Javascript
 
 Dieses Projekt bietet viele Aufgaben mit automatischen Tests, bei denen Sie das
@@ -148,3 +150,21 @@ Testen sie, ob eine Eingabe eine Zahl ist.
 
 Testen Sie, ob in der Eingabe 2 Zahlen von einem Leerzeichen getrennt sind.
 Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
+
+## Eigene Aufgaben
+
+## Aufgabe Peter
+
+Peter liebt die Zahl 1 und möchte deshalb dass Sie alle `1` mit dem Namen
+`Peter` ersetzen.
+
+## Aufgabe Maria
+
+Maria hat Angst vor Grossbuchstaben, deswegen will sie jeden Grossbuchstaben mit
+`!kleinbuchstaben`ersetzen. Ausserdem möchte sie ein `Triggerwarning` am Anfang
+des Satzes haben, wenn dieser vorher Grossbuchstaben enthielt.
+
+## Aufgabe Leonie
+
+Leonie hat ihre Brille verloren und sieht nun alles doppelt, stelle den Satz so
+um, wie sie es sieht.Das heisst sie sieht jeden Buchstaben doppelt
